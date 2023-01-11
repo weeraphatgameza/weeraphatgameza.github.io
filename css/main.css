@@ -1,0 +1,81 @@
+.about{
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 24px;
+}
+
+.avatar{
+    width: 210px;
+    height: 210px;
+    object-fit: cover;   /*ทำให้สัดส่วนของภาพไม่เปลี่ยน เหมือน crop ตรงกลาง*/
+    object-position: 10% 0;  /*เลื่อนภาพที่จะ crop ไปทางขวา 15% ถ้าจะเอาทางซ้ายไม่ต้องใส่ - */
+    /*margin: 40px; เว้นระยะรอบๆ รูป 40 pixel (บน ล่าง ซ้าย ขวา)*/
+    margin-bottom: 40px;  /*เว้นระยะใต้รูป 40 pixel*/
+    border-radius: 50%;  /*ทำขอบทุกขอบให้มนขึ้น เป็น 50% ของความกว้าง/สูง ซึ่งจะได้วงกลมพอดี*/
+    box-shadow: 10px 10px 10px 0px black; /*ทำให้มีเงาหลังรูปภาพ ที่ขยับทางแกน x และ y อย่างละ 10 pixel   ตัวที่ 3 เป็นความฟุ้ง   ตัวที่ 4 เป็น size ที่จะเพิ่มขึ้นจากเดิม*/
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding: 12px 24px;  /*คือแนวตั้ง และแนวนอนตามลำดับ*/
+    /*padding: 8px 7px 12px 24px;  คือบน ขวา ล่าง ซ้าย ตามลำดับ*/
+    text-decoration: none;  /*ลบที่ขีดเส้นใต้ออก เพราะตัว reset.css ไม่ได้รัเซตตัวขีดเส้นใต้ของ link*/
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    background-image: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom left ;
+    min-height: 100vh;   /*vh คือ ความสูงของหน้าจอที่แสดงผล*/
+    padding: 128px;  /*padding คือการเว้นขอบบน ซ้าย และขวาของหน้าเว็ป*/
+}
+
+@media screen and (max-width: 768px) {    /*768 คือความกว้างของแท็ปแล็ต   คือเป็นการเช็คว่าความกว้างน้อยกว่าหรือเท่ากับ 768 มั้ย ถ้าใช่ ทำตามด้ารล่าง*/ 
+    .container{
+        padding: 48px;
+    }
+}
+
+.contact{
+    margin-bottom: 48px;
+}
+
+.contact-icon{
+    margin-right: 12px;
+    width: 16px;   /*กำหนดขนาดของ icon ในกรณีที่ขนาดไม่เท่ากัน จะทำให้การเว้นระยะเท่ากันได้โดยกำหนดความกว้างของ icon*/
+}
+
+.contact-item{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.content{
+    max-width: 500px;
+}
+
+.job{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.name{
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 768px) {    /*768 คือความกว้างของแท็ปแล็ต   คือเป็นการเช็คว่าความกว้างน้อยกว่าหรือเท่ากับ 768 มั้ย ถ้าใช่ ทำตามด้ารล่าง*/ 
+    .name{
+        font-size: 36px;
+    }
+}
