@@ -1,0 +1,159 @@
+.avater{
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 0;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.column-logo{
+    padding-left: 10px;
+    float: left;
+    width: 10%;
+    background-color: rgb(224, 224, 224);
+}
+
+.column-head{
+    float: left;
+    width: 90%;
+}
+
+.column1{
+    float: left;
+    width: 40%;
+    padding: 20px;
+    height: 300px;
+}
+
+.column2{
+    float: left;
+    width: 60%;
+    padding: 20px;
+    height: 300px;
+}
+
+.hello{
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.icon-line{
+    padding-top: 20px;
+    fill: rgb(3, 205, 3);
+    width: 30px;
+}
+
+.icon-mail{
+    padding-top: 10px;
+    fill: rgb(228, 60, 60);
+    width: 30px;
+}
+
+.icon-phone{
+    padding-top: 10px;
+    fill: rgb(0, 90, 19);
+    width: 30px;
+}
+
+.icon li a{
+    padding-left:40px ;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.row{
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.active{
+    background-color: rgb(171, 171, 171);
+}
+
+
+
+
+.nev-bar ul{
+    list-style: none;
+    background-color: rgb(224, 224, 224);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.nev-bar li{
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: left;
+
+}
+
+.nev-bar a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    display: block  ;
+    text-align: center;
+    border-bottom:1px solid #888;
+    transition: .3s;
+}
+
+.nev-bar ul li:hover{
+    background-color: rgb(191, 191, 191);
+}
+
+.logo{
+    height: 100px;
+}
+
+.space{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.space-icon{
+    padding-left: 40px;
+}
+
+@media screen and (min-width: 850px) {
+
+    .nev-bar li{
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .logo{
+        height: 44px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+        border: none;
+    }
+
+    .nev-bar a{
+        border-bottom: none;
+    }
+
+    .nev-bar > ul > li{
+        text-align: center;
+    }
+
+    .nev-bar > ul > li>a{
+        padding-left: 0px;
+    }
+}
